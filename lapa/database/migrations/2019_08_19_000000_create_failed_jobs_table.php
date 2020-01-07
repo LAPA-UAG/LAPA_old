@@ -11,7 +11,7 @@ class CreateFailedJobsTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up_FailedJob()
     {
         Schema::create('failed_jobs', function (Blueprint $table) {
             $table->bigIncrements('id');
