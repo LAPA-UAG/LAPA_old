@@ -6,6 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePasswordResetsTable extends Migration
 {
+
+    protected $schema;
+
+    public function __construct(Schema $schema) 
+    {
+        $this->schema = $schema;
+    }
+
     /**
      * Run the migrations.
      *
@@ -13,7 +21,7 @@ class CreatePasswordResetsTable extends Migration
      */
     public function up_Password()
     {
-        Schema::create('password_resets', function (Blueprint $table) {
+        $this->schema->create('password_resets', function (Blueprint $table) {
             $table->string('email')->index();
             $table->string('token');
             $table->timestamp('created_at')->nullable();
@@ -27,6 +35,6 @@ class CreatePasswordResetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('password_resets');
+        $this->schema->dropIfExists('password_resets');
     }
 }
