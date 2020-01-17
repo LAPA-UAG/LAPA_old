@@ -1,19 +1,19 @@
 # Laboratório de Anatomia e Patologia Animal - LAPA
 
-## Informações do nosso time:
+## Informações do nosso time
 
 **Docente:**
-* [Rodrigo Andrade](https://github.com/rcaa)
+*[Rodrigo Andrade](https://github.com/rcaa)
 
 **Integrantes:**
-* [Íris Viana](https://github.com/irisviana)
-* [Raquel Vieira](https://github.com/RaquelVieiraa)
-* [Vinícius Almeida](https://github.com/vinesnts)
+*[Íris Viana](https://github.com/irisviana)
+*[Raquel Vieira](https://github.com/RaquelVieiraa)
+*[Vinícius Almeida](https://github.com/vinesnts)
 
 **Equipe:**
-* [LAPA-UAG](https://github.com/LAPA-UAG)
+*[LAPA-UAG](https://github.com/LAPA-UAG)
 
-## Informações do projeto:
+## Informações do projeto
 
 Este projeto consiste em desenvolver um sistema em conjunto com o Laboratório de
 Medicina Veterinária para gerenciamento didático e informativo. O sistema deve incorporar
