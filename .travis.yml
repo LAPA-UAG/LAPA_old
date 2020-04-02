@@ -10,11 +10,12 @@ addons:
 install:
   - cp .env.testing .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
-  - php artisan key:generate
+  - php lapa/artisan key:generate
 
 before_script:
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
-  - php artisan serve &
+  - php lapa/artisan serve &
 
 script:
-  - php vendor/bin/codecept run
+  - cd lapa & php vendor/bin/codecept run
+
