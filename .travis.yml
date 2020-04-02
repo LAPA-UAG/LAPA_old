@@ -1,8 +1,4 @@
 language: php
-"os": [
-    "linux"
-],
-"dist": "xenial",
 
 php:
   - 7.3
@@ -12,7 +8,7 @@ addons:
   chrome: stable
 
 install:
-  - cp .env.testing .env
+  - cp .env .env.testing
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - artisan key:generate
 
