@@ -9,6 +9,7 @@ addons:
 
 install:
   - cp lapa/.env.testing lapa/.env
+	- cd lapa/
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - artisan key:generate
 
