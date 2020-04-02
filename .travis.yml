@@ -8,8 +8,8 @@ addons:
   chrome: stable
 
 install:
-	- cd lapa/
-  - cp .env .env.testing
+	- cd lapa/ &
+  - cp .env.testing .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - artisan key:generate
 
