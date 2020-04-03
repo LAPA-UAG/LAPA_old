@@ -21,4 +21,5 @@ before_script:
   - php artisan serve &
 
 script:
+  - chromedriver --url-base=/wd/hub &
   - php vendor/bin/codecept run
