@@ -10,7 +10,6 @@
 [@RaquelVieiraa](https://github.com/RaquelVieiraa)
 [@vinesnts](https://github.com/vinesnts)
 
-
 **Equipe:**
 [LAPA](https://github.com/LAPA-UAG)
 
