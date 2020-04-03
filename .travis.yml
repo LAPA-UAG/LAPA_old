@@ -6,8 +6,12 @@ php:
 
 addons:
   chrome: stable
+  apt:
+    packages:
+      - chromium-chromedriver
 
 install:
+  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
   - cp .env.testing .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - php artisan key:generate
@@ -17,4 +21,5 @@ before_script:
   - php artisan serve &
 
 script:
+  - chromedriver --url-base=/wd/hub
   - php vendor/bin/codecept run
