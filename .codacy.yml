@@ -24,7 +24,7 @@ exclude_paths:
   - '**/lapa/app/Console/**'
   - '**/lapa/app/Providers/**'
   - '**/lapa/database/**'
-  - '**/lapa/database/**/*'
+  - '**/lapa/database/migrations/*'
   - '**/lapa/resources/js/**'
   - '**.mix.js'
   - '**.md'
