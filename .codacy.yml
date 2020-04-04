@@ -24,7 +24,7 @@ exclude_paths:
   - '/app/Console/**'
   - '/app/Providers/**'
   - '/database/**'
-  - '/database/**/*'
+  - '/database/migrations/*'
   - '/resources/js/**'
   - '.mix.js'
 	- 'server.php'

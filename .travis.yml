@@ -11,12 +11,12 @@ addons:
       - chromium-chromedriver
 
 install:
-  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
   - cp .env.testing .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - php artisan key:generate
 
 before_script:
+  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
   - php artisan serve &
 
